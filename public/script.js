@@ -28,8 +28,16 @@ function rewindAudio() {
 function fastForwardAudio() {
     const currentTime = audioElement.currentTime;
     const duration = audioElement.duration || 0;
-    audioElement.currentTime = Math.min(currentTime + 10, duration); // Fast-forward by 10 seconds
+    
+    // Define the live time (you may need to adjust this value)
+    const liveTime = duration; // Set it to the total duration for simplicity
+    
+    // Calculate the new time, but don't exceed the live time
+    const newTime = Math.min(currentTime + 10, liveTime);
+    
+    audioElement.currentTime = newTime;
 }
+
 
 function jumpToLive() {
     // Reload the audio stream to jump to the live part

@@ -11,6 +11,12 @@
   </head>
 <body>
   <div class="custom-player">
+    <div class="card-info">
+      <h1>Radio Rewind</h1>
+      <p>Rewind the radio. Created by Rose Mary Cavalcante.</p>
+      <h3>Q102 Philadelphia</h3>
+    </div>
+
     <audio id="radioStream">
         <source src="http://stream.revma.ihrhls.com/zc1997" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -21,9 +27,8 @@
     </div>
 
     <div class="seek-controls">
-        <input type="range" id="seekSlider" min="0" max="100" step="0.01" onchange="seekAudio()" value="0">
-        <button id="rewindButton" onclick="rewindAudio()">&#9664; 10s</button>
-        <button id="forwardButton" onclick="fastForwardAudio()">10s &#9654;</button>
+        <button id="rewindButton" onclick="rewindAudio()">&#9664; 5s</button>
+        <button id="forwardButton" onclick="fastForwardAudio()">5s &#9654;</button>
     </div>
 </div>
 

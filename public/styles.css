@@ -13,19 +13,34 @@ body {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  padding: 2.5rem;
+  width: 75%;
   text-align: center;
+}
+
+.card-info {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 4rem;
+  font-weight: 400;
 }
 
 .controls button {
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #5bd357;
   color: #fff;
   border: none;
   border-radius: 4px;
-  padding: 8px 16px;
+  padding: 10px 30px;
   cursor: pointer;
   margin: 5px;
+  margin-top: 2rem;
 }
 
 .controls button:hover {
@@ -42,9 +57,10 @@ input[type="range"] {
   color: #fff;
   border: none;
   border-radius: 4px;
-  padding: 4px 8px;
+  padding: 10px 20px;
   cursor: pointer;
   margin: 5px;
+  margin-bottom: 2rem;
 }
 
 .seek-controls button:hover {
